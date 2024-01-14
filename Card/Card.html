@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../800px-Heptagramm7.svg (1) (1).png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+  <title>SeptaBank-card</title>
+  <link rel="stylesheet" href="./Card.css">
+</head>
+<body>
+  <div class="loading">
+    <img class="loading-img" src="../800px-Heptagramm7.svg (1) (1).png" alt="Загрузка">
+  </div>
+  <div class="video-container">
+    <video autoplay muted loop id="video-bg">
+      <source src="../videoplayback.mp4" type="video/mp4">
+    </video>
+    <header class="header">
+      <div class="header__body">
+        <a href="../index.html">
+          <img class="LOGO" src="../800px-Heptagramm7.svg (1) (1).png" alt="LOGO">
+        </a>
+        <span class="header__logo">SeptaBank</span>
+        <ul class="header__menu">
+          <li class="header__menu-link login">
+            <a href="../index.html">Головна</a>
+          </li>
+          <li class="header__menu-link login">
+            <a href="../index.html">Зберегти</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <form class="form">
+        <label class="form__label">Enter your Name</label>
+        <input class="form-name" type="text" placeholder="Name...">
+
+        <label class="form__label">Enter your Second Name</label>
+        <input class="form-secondName" type="text" placeholder="Second Name...">
+
+        <label class="form__label">Make card's code</label>
+        <button class="form__make">Make it</button>
+
+        <label class="form__label">Make card's CVV</label>
+        <button class="form__make-2">Make it</button>
+
+        <label class="form__label">How much will take</label>
+        <input class="form-date" type="date">
+      </form>
+      <div class="card" id="card">
+        <div class="card-inner">
+          <div class="front">
+            <h1 class="card-bank-name">SeptaBank</h1>
+            <img src="./card.png" alt="" class="gold-bl">
+            <br class="card-br">
+            <h1 class="card-make">0000 0000 0000 0000</h1>
+            <label class="card-date">DATE</label>
+            <br class="card-br">
+            <div class="cardholder-info">
+              <label class="card-secondName">CARDHOLDER</label>
+              <label class="card-name">NAME</label>
+            </div>
+          </div>
+          <div class="back">
+            <div class="poloska"></div>
+            <label class="card-make-2">CVV</label>
+            <p class="soglash">Послуга оплати через інтернет здійснюється відповідно до Правил міжнародних платіжних систем Visa, MasterCard та Платіжної системи СВІТ на принципах дотримання конфіденційності та безпеки здійснення платежу, для чого використовуються найсучасніші методи перевірки, шифрування та передачі даних по закритих каналах зв'язку. Введення даних банківської картки здійснюється на захищеній платіжній сторінці.</p>
+            <h1 class="card-bank-name">SeptaBank</h1>
+          </div>
+        </div>
+      </div>      
+      
+    </div>
+  </div>
+  <script src="./Card.js"></script>
+</body>
+</html>

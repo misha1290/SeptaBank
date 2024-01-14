@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../800px-Heptagramm7.svg (1) (1).png" type="image/x-icon">
+  <title>SeptaBank-restresion</title>
+  <link rel="stylesheet" href="./Restresion.css">
+</head>
+<body>
+  <div class="loading">
+    <img class="loading-img" src="../800px-Heptagramm7.svg (1) (1).png" alt="Загрузка">
+  </div>
+  <div class="video-container">
+  <video autoplay muted loop id="video-bg">
+    <source src="../videoplayback.mp4" type="video/mp4">
+  </video>
+  </div>
+    <div class="content">
+      <div class="modal">Введите имя!</div>
+      <form action="" class="restresion">
+        <h1>Log in</h1>
+        <input type="text" name="username" placeholder="Username" class="restresion__username">
+        <input type="email" name="email" placeholder="Email" class="restresion__email">
+        <input id='passwordInput' type="password" name="password" placeholder="Password" class="restresion__password">
+        <input type="tel" name="tel" placeholder="+380" class="restresion__tel">
+        <button class="restresion__button" type="submit" onclick='checkPassword()'>Зарееструватися</button>
+      </form>
+    </div>
+  <script src="./Restresion.js"></script>
+</body>
+</html>
